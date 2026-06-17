@@ -11,6 +11,8 @@
     --gray: #A8B8CC;
     --gray-dim: rgba(168, 184, 204, .5);
     --success: #22D3A5;
+    --whatsapp: #25D366;
+    --neonwpp: rgb(23, 199, 88);
     --danger: #F87171;
     --border-glow: rgba(59, 130, 246, .35);
     --border-subtle: rgba(59, 130, 246, .12);
@@ -80,14 +82,14 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--blue-neon), var(--blue-mid));
+    background: linear-gradient(135deg, var(--whatsapp), var(--neonwpp));
     color: var(--white);
-    box-shadow: 0 4px 20px rgba(59, 130, 246, .35)
+    box-shadow: 0 4px 20px rgba(37, 211, 102, .35)
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(59, 130, 246, .6), 0 0 20px rgba(59, 130, 246, .3)
+    box-shadow: 0 8px 30px rgba(37, 211, 102, .6), 0 0 20px rgba(37, 211, 102, .3)
 }
 
 .btn-glow {
