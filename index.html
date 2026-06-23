@@ -12,6 +12,13 @@
 </head>
 <body>
 
+  <!-- ── Floating WhatsApp button ── -->
+  <a href="https://wa.me/5547991029013?text=Olá,%20gostaria%20de%20um%20orçamento!" class="wpp-fab" aria-label="Falar pelo WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
   <header class="header" id="home">
     <div class="container header-inner">
       <a href="#" class="logo">
@@ -25,8 +32,22 @@
         <a href="#contact" class="nav-link">contato</a>
       </nav>
       <a href="https://wa.me/5547991029013?text=Olá,%20gostaria%20de%20um%20orçamento!" class="btn btn-primary">solicitar orçamento</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="nav-link">Início</a>
+    <a href="#about" class="nav-link">Sobre nós</a>
+    <a href="#features" class="nav-link">Serviços</a>
+    <a href="#contact" class="nav-link">Contato</a>
+    <a href="https://wa.me/5547991029013?text=Olá,%20gostaria%20de%20um%20orçamento!" class="btn btn-primary">Solicitar orçamento</a>
+  </nav>
 
   <section class="hero-section" id="about">
     <div class="hero-bg-glow"></div>
@@ -35,7 +56,7 @@
         <p class="hero-eyebrow">ESPECIALISTA EM INSTALAÇÕES ELÉTRICAS</p>
         <h1 class="hero-headline">ENGENHARIA<br />BERGMANN</h1>
         <p class="hero-sub">
-          Instalação profissional de carregadores para veículos elétricos com atendimento direto do engenheiro responsável. 
+          Instalação profissional de carregadores para veículos elétricos com atendimento direto do engenheiro responsável.
           Projeto, dimensionamento e instalação em um único lugar.
         </p>
         <div class="hero-actions">
@@ -68,7 +89,7 @@
           <span class="fc-change positive">&#9650; info</span>
         </div>
         <div class="hero-floating-card fc-3">
-          <span class="fc-label">Prazo de instalação do produto</span>
+          <span class="fc-label">Prazo de instalação</span>
           <span class="fc-value">1 dia</span>
           <span class="fc-change positive">&#9650; ágil</span>
         </div>
@@ -81,13 +102,13 @@
 
   <section class="trusted-section" id="trusted">
     <div class="container">
-      <p class="section-eyebrow">NOSSOS NÚMEROS</p>
-      <h2 class="trusted-headline">Resultados que<br />Falam por Si.</h2>
-      <p class="trusted-sub">
+      <p class="section-eyebrow reveal">NOSSOS NÚMEROS</p>
+      <h2 class="trusted-headline reveal">Resultados que<br />Falam por Si.</h2>
+      <p class="trusted-sub reveal">
         Anos de experiência em instalações elétricas com foco em mobilidade elétrica. Cada projeto entregue com segurança, dentro do prazo e com garantia.
       </p>
       <div class="trusted-cards">
-        <div class="trusted-card tc-left">
+        <div class="trusted-card reveal">
           <div class="trusted-card-chart">
             <div class="chart-bar-group">
               <div class="chart-bar" style="height:40%"></div>
@@ -105,7 +126,7 @@
             <span class="tc-change positive">+23% este ano</span>
           </div>
         </div>
-        <div class="trusted-card tc-right">
+        <div class="trusted-card reveal">
           <div class="trusted-coin-display">
             <div class="tc-coin">⚡</div>
             <div class="tc-coin-rings">
@@ -125,18 +146,18 @@
 
   <section class="features-section" id="features">
     <div class="container">
-      <p class="section-eyebrow">O QUE OFERECEMOS</p>
-      <h2 class="section-title">Serviços</h2>
+      <p class="section-eyebrow reveal">O QUE OFERECEMOS</p>
+      <h2 class="section-title reveal">Serviços</h2>
       <div class="features-layout">
         <div class="features-left">
-          <div class="feature-item">
+          <div class="feature-item reveal-left">
             <div class="feature-number">01</div>
             <div class="feature-content">
               <h3 class="feature-title">Residencial</h3>
-              <p class="feature-desc">Avaliamos sua instalação elétrica, dimensionamos a infraestrutura necessária e realizamos a instalação completa do carregador com segurança e garantia.oda a infraestrutura elétrica necessária.</p>
+              <p class="feature-desc">Avaliamos sua instalação elétrica, dimensionamos a infraestrutura necessária e realizamos a instalação completa do carregador com segurança e garantia.</p>
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item reveal-left">
             <div class="feature-number">03</div>
             <div class="feature-content">
               <h3 class="feature-title">Transparente</h3>
@@ -145,7 +166,7 @@
           </div>
         </div>
 
-        <div class="phone-mockup">
+        <div class="phone-mockup reveal">
           <div class="phone-frame">
             <div class="phone-screen">
               <div class="phone-header">
@@ -179,14 +200,14 @@
         </div>
 
         <div class="features-right">
-          <div class="feature-item">
+          <div class="feature-item reveal-right">
             <div class="feature-number">02</div>
             <div class="feature-content">
               <h3 class="feature-title">Empresarial</h3>
               <p class="feature-desc">Soluções para empresas, frotas e estacionamentos com gerenciamento de carga, medição individual e possibilidade de expansão futura.</p>
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item reveal-right">
             <div class="feature-number">04</div>
             <div class="feature-content">
               <h3 class="feature-title">Suporte em até 7 dias</h3>
@@ -200,25 +221,25 @@
 
   <section class="troca-section">
     <div class="container troca-inner">
-      <div class="troca-content">
+      <div class="troca-content reveal-left">
         <p class="troca-eyebrow">Condomínios — especialidade</p>
         <h2 class="troca-headline">Carregue<br />No Condomínio.</h2>
         <p class="troca-sub">
           Projeto completo de infraestrutura para condomínios residenciais e comerciais com medição individual por unidade, gestão inteligente de carga e aprovação em assembleia.
         </p>
-        <div style="display: inline-flex; align-items: center; gap: 4px; background: #ecf5ff; border: 1px solid #21488a; border-radius: 999px; padding: 10px 10px; margin: 1px 0 20px; font-family: 'Poppins', Arial, sans-serif;">
-  <span style="display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; min-width: 22px; border-radius: 50%; background: #f49c4a;">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M13 2 3 14h7l-1 8 11-13h-7l1-7z" fill="#ffffff" stroke="none"/>
-    </svg>
-  </span>
-  <span style="font-size: 15px; color: #1e2a52; line-height: 1.3;">
-    Auxílio na <span style="color: #1D4ED8; font-weight: 700;">apresentação técnica</span> para síndicos e administradors
-  </span>
-</div>
+        <div class="troca-badge">
+          <span class="troca-badge-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+              <path d="M13 2 3 14h7l-1 8 11-13h-7l1-7z" fill="#ffffff"/>
+            </svg>
+          </span>
+          <span class="troca-badge-text">
+            Auxílio na <strong style="color:#1D4ED8">apresentação técnica</strong> para síndicos e administradores
+          </span>
+        </div>
         <a href="https://wa.me/5547991029013?text=Quero%20saber%20mais%20sobre%20instalação%20em%20condomínio" class="btn btn-dark">Falar com especialista</a>
       </div>
-      <div class="troca-visual">
+      <div class="troca-visual reveal-right">
         <div class="troca-card">
           <div class="troca-coin-display">
             <div class="troca-platform">
@@ -246,7 +267,7 @@
 
   <section class="market-section" id="market">
     <div class="container market-inner">
-      <div class="market-visual">
+      <div class="market-visual reveal-left">
         <div class="market-laptop">
           <div class="laptop-screen">
             <div class="screen-content">
@@ -267,109 +288,34 @@
         <div class="market-coin mc2">🔌</div>
         <div class="market-glow"></div>
       </div>
-      <div class="market-content">
+      <div class="market-content reveal-right">
         <p class="section-eyebrow light">POR QUE ESCOLHER</p>
         <h2 class="market-headline">Quem será responsável<br />pelo seu projeto?</h2>
         <p class="market-sub">
           Meu nome é Erick Bergmann, sou engenheiro eletricista e atuo na área de mobilidade elétrica e infraestrutura para carregamento de veículos elétricos.<br />
-Diferente de empresas que terceirizam etapas do processo, acompanho pessoalmente desde a análise inicial até a instalação final do equipamento.
+          Diferente de empresas que terceirizam etapas do processo, acompanho pessoalmente desde a análise inicial até a instalação final do equipamento.
         </p>
         <a href="https://wa.me/5547991029013" class="btn btn-primary btn-glow">Solicitar visita técnica</a>
       </div>
     </div>
   </section>
-<!-- POR ENQUANTO NAO VAI NO SITE
-  <section class="learn-section">
-    <div class="container">
-      <p class="section-eyebrow">CONTEÚDO</p>
-      <h2 class="section-title">Saiba mais sobre<br />carregadores elétricos.</h2>
-      <div class="crypto-grid">
-        <div class="learn-card">
-          <div class="learn-card-img">
-            <div class="learn-img-placeholder lp1">
-              <span class="lp-icon">⚡</span>
-            </div>
-          </div>
-          <div class="learn-card-footer">
-            <span class="learn-card-title">Tipos de carregadores</span>
-            <span class="learn-arrow">&rarr;</span>
-          </div>
-        </div>
-        <div class="learn-card">
-          <div class="learn-card-img">
-            <div class="learn-img-placeholder lp2">
-              <span class="lp-icon">🏠</span>
-            </div>
-          </div>
-          <div class="learn-card-footer">
-            <span class="learn-card-title">Instalação residencial</span>
-            <span class="learn-arrow">&rarr;</span>
-          </div>
-        </div>
-        <div class="learn-card">
-          <div class="learn-card-img">
-            <div class="learn-img-placeholder lp3">
-              <span class="lp-icon">🏢</span>
-            </div>
-          </div>
-          <div class="learn-card-footer">
-            <span class="learn-card-title">Soluções empresariais</span>
-            <span class="learn-arrow">&rarr;</span>
-          </div>
-        </div>
-        <div class="learn-card">
-          <div class="learn-card-img">
-            <div class="learn-img-placeholder lp4">
-              <span class="lp-icon">📋</span>
-            </div>
-          </div>
-          <div class="learn-card-footer">
-            <span class="learn-card-title">Normas e certificações</span>
-            <span class="learn-arrow">&rarr;</span>
-          </div>
-        </div>
-        <div class="learn-card">
-          <div class="learn-card-img">
-            <div class="learn-img-placeholder lp5">
-              <span class="lp-icon">🔋</span>
-            </div>
-          </div>
-          <div class="learn-card-footer">
-            <span class="learn-card-title">Como economizar energia</span>
-            <span class="learn-arrow">&rarr;</span>
-          </div>
-        </div>
-        <div class="learn-card">
-          <div class="learn-card-img">
-            <div class="learn-img-placeholder lp6">
-              <span class="lp-icon">🚗</span>
-            </div>
-          </div>
-          <div class="learn-card-footer">
-            <span class="learn-card-title">Veículos compatíveis</span>
-            <span class="learn-arrow">&rarr;</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
--->
+
   <section class="why-section">
     <div class="container">
-      <p class="section-eyebrow dark">NOSSOS DIFERENCIAIS</p>
-      <h2 class="why-headline">Por que a Bergmann?</h2>
+      <p class="section-eyebrow dark reveal">NOSSOS DIFERENCIAIS</p>
+      <h2 class="why-headline reveal">Por que a Bergmann?</h2>
       <div class="why-grid">
-        <div class="why-card">
+        <div class="why-card reveal">
           <div class="why-number">Diferencial 01</div>
           <h3 class="why-title">Profissional Certificado</h3>
-          <p class="why-desc">acho que escolher a Bergmann, porque é uma empresa de engenheiros certificados com CREA disponivel, podendo assinar ART, desta forma garante 100% a qualidade e confiaça no serviço.</p>
+          <p class="why-desc">Engenheiros certificados com CREA disponível para assinar ART, garantindo 100% de qualidade e confiança em cada serviço executado.</p>
         </div>
-        <div class="why-card">
+        <div class="why-card reveal">
           <div class="why-number">Diferencial 02</div>
           <h3 class="why-title">Atendimento Ágil</h3>
           <p class="why-desc">Visita técnica gratuita e orçamento no mesmo dia. Instalação concluída em até 1 dia útil com total organização e limpeza do ambiente.</p>
         </div>
-        <div class="why-card">
+        <div class="why-card reveal">
           <div class="why-number">Diferencial 03</div>
           <h3 class="why-title">Garantia Total</h3>
           <p class="why-desc">1 ano de garantia em mão de obra e suporte técnico pós-instalação. Estamos sempre disponíveis para atender qualquer necessidade.</p>
@@ -380,25 +326,25 @@ Diferente de empresas que terceirizam etapas do processo, acompanho pessoalmente
 
   <section class="testimonial-section" id="contact">
     <div class="container">
-      <div class="testimonial-header">
+      <div class="testimonial-header reveal">
         <p class="section-eyebrow">DEPOIMENTOS DOS NOSSOS CLIENTES</p>
         <h2 class="testimonial-headline">O que dizem?</h2>
       </div>
       <div class="testimonial-grid">
-        <div class="testimonial-card">
+        <div class="testimonial-card reveal-left">
           <div class="quote-mark">&ldquo;</div>
           <p class="testimonial-text">
-            A Engenharia Bergmann instalou o carregador na minha garagem de forma impecável. Profissional pontual, organizada e muito profissional. Em menos de 4 horas tudo estava funcionando perfeitamente.
+            A Engenharia Bergmann instalou o carregador na minha garagem de forma impecável. Profissional pontual, organizado e muito competente. Em menos de 4 horas tudo estava funcionando perfeitamente.
           </p>
           <div class="testimonial-author">
             <div class="author-avatar av1"></div>
             <div class="author-info">
               <span class="author-name">Carlos Mendes</span>
-              <span class="author-role">Cliente residencial — Balneario Camboriú, SC</span>
+              <span class="author-role">Cliente residencial — Balneário Camboriú, SC</span>
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
+        <div class="testimonial-card reveal-right">
           <div class="quote-mark">&ldquo;</div>
           <p class="testimonial-text">
             Contratamos a Bergmann para equipar o estacionamento da nossa empresa com 10 pontos de recarga. O projeto foi entregue no prazo, dentro do orçamento e com toda a documentação técnica necessária.
@@ -449,13 +395,45 @@ Diferente de empresas que terceirizam etapas do processo, acompanho pessoalmente
       </div>
       <div class="footer-col">
         <h4 class="footer-col-title">Contato</h4>
-        <a href="https://wa.me/5511999999999" class="footer-link">WhatsApp</a>
+        <a href="https://wa.me/5547991029013" class="footer-link">WhatsApp</a>
         <a href="mailto:contato@bergmann.com.br" class="footer-link">E-mail</a>
-        <a href="#" class="footer-link">São Paulo e região</a>
+        <a href="#" class="footer-link">Balneário Camboriú, SC</a>
         <a href="#" class="footer-link">Política de privacidade</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on nav link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
